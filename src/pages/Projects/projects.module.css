@@ -1,0 +1,36 @@
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background: #000000;
+  color: #fff;
+  padding: 3rem 0 4rem 4rem;
+}
+.main h3 {
+  font-size: 35px;
+  font-weight: bolder;
+}
+.fade {
+  font-family: "Merriweather", serif;
+  font-size: 61.4px;
+  color: rgba(255, 255, 255, 0.2);
+  padding-left: 6rem;
+  padding-bottom: 2rem;
+}
+.cardContainer {
+  display: flex;
+  overflow: auto;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.cardContainer::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.cardContainer::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+.cardContainer::-webkit-scrollbar-thumb {
+  background: #FFFFFF;
+  border-radius: 10px;
+}

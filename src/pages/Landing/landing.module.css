@@ -1,0 +1,59 @@
+.main {
+  padding: 4rem 0;
+}
+.container {
+  width: 70%;
+  margin: 4rem auto 4rem auto;
+}
+.container > p {
+  width: 80%;
+  margin: 0 auto;
+}
+.text1 {
+  position: absolute;
+  top: 5rem;
+  left: 11rem;
+}
+.text2 {
+  position: absolute;
+  bottom: 7rem;
+  right: 12rem;
+}
+.star1 {
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  animation: rotation 3s infinite linear;
+}
+.star2 {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  animation: rotation 3s infinite linear;
+}
+.main h1 {
+  line-height: 90px;
+  width: 90%;
+  margin: 0 auto;
+}
+.main p {
+  line-height: 33px;
+  padding-top: 2rem;
+}
+.dock > div {
+  position: fixed;
+  bottom: 0rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dock p {
+  top: -60px !important;
+}
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}

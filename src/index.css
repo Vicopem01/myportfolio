@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "gilroy-md";
+  src: url("./assets/gilroy_font/Gilroy-Regular.otf");
+}
+body {
+  font-family: "gilroy-md";
+  width: 100%;
+  min-height: 100vh;
+  background: #000000;
+  color: #fff;
+  transition: 1.5s ease-in-out;
+}
+body[class*="light"] {
+  color: #fff;
+  filter: invert(100%);
+}
+body[class*="light"] img {
+  filter: invert(100%);
+}
+.light {
+  background: #fff;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+h2 {
+  font-size: 48px;
+}
