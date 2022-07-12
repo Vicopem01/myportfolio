@@ -1,3 +1,6 @@
+.mobile {
+  display: none;
+}
 .main {
   padding: 4rem 0;
 }
@@ -55,5 +58,24 @@
   }
   to {
     -webkit-transform: rotate(359deg);
+  }
+}
+@media (max-width: 1150px) {
+  .main {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .mobile img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+  .mobile h1 {
+    font-size: 16px;
   }
 }

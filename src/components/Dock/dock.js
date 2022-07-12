@@ -13,6 +13,8 @@ import classes from "./dock.module.css";
 import { useContext } from "react";
 import { ThemeContext } from "../../context";
 import Avatar from "../../assets/images/Dock/avatar.png";
+import GithubLight from "../../assets/images/Dock/github-light.png";
+import GithubDark from "../../assets/images/Dock/github-dark.png";
 
 const Dock = () => {
   let { theme, setTheme } = useContext(ThemeContext);
@@ -37,26 +39,30 @@ const Dock = () => {
       </Link>
       <a
         className={classes.blog}
-        href="https://medium.com/me/stories/drafts"
+        href="https://medium.com/@vicopem"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <p>Blog</p>
+        <p>My Blog</p>
         <Blog />
       </a>
       <a
-        className={classes.behance}
-        href="https://www.behance.net/ajaoafeez"
+        className={classes.github}
+        href="https://github.com/Vicopem01"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <p>Behance</p>
-        <Behance />
+        <p>GitHub</p>
+        {theme === "dark" ? (
+          <img src={GithubLight} alt="GitHub" />
+        ) : (
+          <img src={GithubDark} alt="GitHub" />
+        )}
       </a>
       <span className={classes.line}></span>
       <a
         className={classes.linkedIn}
-        href="https://www.linkedin.com/in/ajao-afeez-olanrewaju-78844210a/"
+        href="https://www.linkedin.com/in/victor-ogunjobi/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -65,7 +71,7 @@ const Dock = () => {
       </a>
       <a
         className={classes.twitter}
-        href="https://twitter.com/Righteous_man13"
+        href="https://twitter.com/vicopem"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -74,14 +80,14 @@ const Dock = () => {
       </a>
       <a
         className={classes.mail}
-        href="mailto:Ajaoafeez93@gmail.com?subject=Hi%20Afeez&body=I%20saw%20your%20portfolio%20and%20"
+        href="mailto:vicopem@gmail.com?subject=Hi%Victor&body=I%20saw%20your%20portfolio%20and%20"
         rel="noopener noreferrer"
       >
         <p>Mail</p>
         <Mail />
       </a>
       <div className={classes.dark} onClick={handleClick}>
-        <p>Dark</p>
+        <p>Theme</p>
         <Dark />
       </div>
     </div>
